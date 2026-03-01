@@ -1,0 +1,98 @@
+class StackADT:
+    def __init__(self):
+        self.stack = []
+
+    def push(self, x):
+        self.stack.append(x)
+        print(f"Successfully pushed: {x}")
+
+    def pop(self):
+        if self.is_empty():
+            return "Error: Stack is empty"
+        return f"Popped value: {self.stack.pop()}"
+
+    def peek(self):
+        if self.is_empty():
+            return "Error: Stack is empty"
+        return f"Top element is: {self.stack[-1]}"
+
+    def is_empty(self):
+        return len(self.stack) == 0
+
+
+s = StackADT()
+
+while True:
+    print("\n--- Stack Operations ---")
+    print("1. Push")
+    print("2. Pop")
+    print("3. Peek")
+    print("4. Check if Empty")
+    print("5. Exit")
+    
+    choice = input("Enter your choice (1-5): ")
+
+    if choice == '1':
+        val = input("Enter the value to push: ")
+        s.push(val)
+    elif choice == '2':
+        print(s.pop())
+    elif choice == '3':
+        print(s.peek())
+    elif choice == '4':
+        print(f"Is stack empty? {s.is_empty()}")
+    elif choice == '5':
+        print("Exiting...")
+        break
+    else:
+        print("Invalid choice, please try again.")
+
+
+#Factorial
+def factorial(num):
+    if num == 0 or num == 1:
+        return 1
+    else:
+        return num*factorial(num-1)
+    
+num = int(input("Enter The Factorial Value"))
+if num < 1:
+    print("Invalid")
+
+else:
+    print(f"{factorial(num)}") 
+
+
+#Fibonacci
+def fibonacci(n):
+    if n <= 1:
+        return (n)
+    return fibonacci(n-1) + fibonacci(n-2)
+
+for i in range(20):
+    print(fibonacci(i), end=" ")
+
+
+#Binary Arrar
+def binary_search(arr,low,high,key):
+    if low>high:
+        return -1
+    
+    mid = (low + high)//2
+
+    if arr[mid] ==key:
+        return mid
+    elif arr[mid]<key:
+        return binary_search(arr,mid+1,key)
+    else:
+        return binary_search(arr,low,mid-1,key)
+    
+arr = [1,3,5,7,9,11,13]
+key=7
+
+result = binary_search(arr,0,len(arr)-1,key)
+
+if result!=1:
+    print("Element found at index",result)
+else:
+    print("Element not found")
