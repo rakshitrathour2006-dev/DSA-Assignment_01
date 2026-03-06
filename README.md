@@ -1,1 +1,39 @@
-This repository contains the implementation of core data structure and algorithm concepts using Python. The project demonstrates Stack ADT, recursion, and algorithmic logic. Implemented Components Part A: Stack ADT A Stack Abstract Data Type with the following operations: push(x), pop(), peek(), is_empty() The program provides a menu-driven interface for user interaction. Part B: Factorial & Fibonacci (Recursion) Factorial: Recursive implementation, valid for n ≥ 0, handles invalid input. Fibonacci: Recursive implementation, prints the first 20 Fibonacci numbers. Part C: Recursive Binary Search Uses recursion to search an element in a sorted array. Returns the index if found, otherwise prints "Element not found". Project Structure assignment.py – Full Python code output.txt – Console output README.md – Project documentation How to Run python assignment.py Academic Integrity This work is original and created for academic submission. No plagiarism has been used
+Assignment 1 – Data Structures and Algorithms
+Overview
+
+This assignment introduces basic concepts of Data Structures and Algorithms (DSA). It focuses on understanding Abstract Data Types (ADT), analyzing time and space complexity, and studying algorithm design techniques such as recursion, divide and conquer, and dynamic programming. Examples include problems like Binary Search, Fibonacci, and Tower of Hanoi.
+
+Contents of the Assignment
+Part A – Stack ADT
+
+This section explains the concept of Abstract Data Types using the Stack data structure. It covers stack operations such as push, pop, peek, and isEmpty, and explains why these operations usually run in O(1) time.
+
+Part B & Part D – Complexity Analysis
+
+This part analyzes the time and space complexity of algorithms including Factorial, Fibonacci, Tower of Hanoi, and Binary Search.
+
+Part E – Paradigm Reflection
+
+This section explains how different algorithms follow specific algorithm design paradigms:
+
+Binary Search – Divide and Conquer
+
+Fibonacci (Memoization) – Dynamic Programming
+
+Tower of Hanoi – Recursion
+
+Learning Outcomes
+
+After this assignment, the following concepts are understood:
+
+Purpose of Abstract Data Types
+
+Basic Stack operations
+
+Time and space complexity analysis
+
+Concepts of recursion, divide and conquer, and dynamic programming
+
+Conclusion
+
+This assignment helps build a basic understanding of algorithm design and efficiency, which is important for solving computational problems effectively.
